@@ -2,18 +2,20 @@ module LatePropagation
 
 // Finds late propagation in OmniCCG's clone genealogy (ccg_data.xml):
 // a change that leaves some copies of a clone class behind, followed later
-// by a change to one of those lagging copies.
+// by a change to one of those lagging copies. Prints the cases and writes
+// late-propagation.html (from report.html) next to ccg_data.xml.
 //
-//   java -jar rascal-shell-stable.jar LatePropagation <results-folder>
+//   java -jar rascal-shell-stable.jar LatePropagation <results-folder>   (run from patterns/)
 
 import IO;
 import List;
 import String;
+import lang::json::IO;
 import lang::xml::DOM;
 
 data Copy = copy(str file, int startLine, int endLine, str hash);
 data Version = version(int nr, str commit, str evolution, str change, list[Copy] copies);
-data Finding = finding(Version diverged, Version propagated);
+data Finding = finding(int diverged, int propagated);  // indices into the lineage's versions
 
 // ---- Reading ccg_data.xml: one list of versions per lineage
 
@@ -51,7 +53,7 @@ list[Finding] latePropagation(list[Version] versions) {
         lagging = hashes(versions[i]) & hashes(versions[i - 1]);
         for (j <- [i + 1..size(versions)], !(lagging <= hashes(versions[j]))) {
             if (versions[j].evolution != "Subtract" && leading <= hashes(versions[j])) {
-                findings += finding(versions[i], versions[j]);
+                findings += finding(i, j);
             }
             break;
         }
@@ -66,17 +68,33 @@ int main(list[str] args) {
         println("usage: LatePropagation RESULTS_FOLDER  (the folder with ccg_data.xml)");
         return 2;
     }
-    lineages = readLineages(|file:///| + args[0] + "ccg_data.xml");
-    total = 0;
-    for (i <- index(lineages), f <- latePropagation(lineages[i])) {
-        total += 1;
-        println("Lineage <i + 1>: late propagation");
-        println("  diverged   at commit #<f.diverged.nr> (<f.diverged.commit>)");
-        println("  propagated at commit #<f.propagated.nr> (<f.propagated.commit>), <f.propagated.nr - f.diverged.nr> commit(s) later");
-        for (c <- f.propagated.copies) {
-            println("    <c.file>:<c.startLine>-<c.endLine>");
-        }
+    loc results = |file:///| + args[0];
+    lineages = readLineages(results + "ccg_data.xml");
+    found = [<l, f> | l <- lineages, f <- latePropagation(l)];
+
+    for (<l, f> <- found) {
+        d = l[f.diverged];
+        p = l[f.propagated];
+        println("Late propagation in <intercalate(", ", dup([c.file | c <- p.copies]))>");
+        println("  diverged   at commit #<d.nr> (<d.commit>)");
+        println("  caught up  at commit #<p.nr> (<p.commit>), <p.nr - d.nr> commit(s) later");
     }
-    println("<total> late propagation(s) in <size(lineages)> clone lineages");
+    println("<size(found)> late propagation(s) in <size(lineages)> clone lineages");
+
+    writeReport(results, size(lineages), found);
     return 0;
+}
+
+// The page is report.html with the findings as JSON in place of __DATA__.
+void writeReport(loc results, int lineages, list[tuple[list[Version], Finding]] found) {
+    report = ("results": results.path, "lineages": lineages, "findings": [
+        ("diverged": f.diverged, "propagated": f.propagated, "versions": [
+            ("nr": v.nr, "commit": v.commit, "copies": [
+                ("file": c.file, "start": c.startLine, "end": c.endLine, "hash": c.hash) | c <- v.copies])
+            | v <- l])
+        | <l, f> <- found]);
+    json = replaceAll(asJSON(report), "\</", "\<\\/");  // keep "\</script>" out of the page
+    page = results + "late-propagation.html";
+    writeFile(page, replaceFirst(readFile(|cwd:///report.html|), "__DATA__", json));
+    println("Report: <page.path>");
 }

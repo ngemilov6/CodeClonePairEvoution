@@ -1,15 +1,27 @@
 #!/usr/bin/env bash
 # ./run.sh <repo-dir> [--out DIR] [--fixed-leaps N | --from-commit SHA] [--first N | --last N]
-# Runs OmniCCG on the repository, then the late propagation detection on its result.
+#     Runs OmniCCG on the repository (saving ccg_data.xml in the results folder),
+#     then the late propagation detection, and opens the report in the browser.
+# ./run.sh <repo-dir or results folder> --patterns-only [--out DIR]
+#     Skips OmniCCG and reruns only the detection on the saved ccg_data.xml.
 set -eo pipefail
 here=$(cd "$(dirname "$0")" && pwd)
-"$here/.venv/bin/python" "$here/clone_evo.py" "$@"
 
-# The results folder: --out DIR, or <repo-dir>/clone-results
+patterns_only=false; args=()
+for a in "$@"; do if [ "$a" = --patterns-only ]; then patterns_only=true; else args+=("$a"); fi; done
+set -- "${args[@]}"
+$patterns_only || "$here/.venv/bin/python" "$here/clone_evo.py" "$@"
+
+# The results folder: --out DIR, or <repo-dir>/clone-results, or the folder given
 out=${1%/}/clone-results
-args=("$@"); for i in "${!args[@]}"; do [ "${args[i]}" = --out ] && out=${args[i+1]}; done
-[ -f "$out/ccg_data.xml" ] || exit 0
+[ -f "$1/ccg_data.xml" ] && out=$1
+for i in "${!args[@]}"; do [ "${args[i]}" = --out ] && out=${args[i+1]}; done
+if [ ! -f "$out/ccg_data.xml" ]; then
+    $patterns_only && { echo "run.sh: no ccg_data.xml in $out; run without --patterns-only first" >&2; exit 1; }
+    exit 0  # OmniCCG found no clone genealogy
+fi
 out=$(realpath "$out")
 echo
 cd "$here/patterns" && java -jar "$here/rascal-shell-stable.jar" LatePropagation "$out" 2>&1 |
     grep -v -e '^\[INFO\]' -e '^WARNING' -e '^Job:' -e '^  - |'
+xdg-open "$out/late-propagation.html" > /dev/null 2>&1 &

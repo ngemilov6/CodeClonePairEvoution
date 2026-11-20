@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Late propagation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #f5f7f9; --surface: #ffffff; --ink: #18202b; --muted: #5e6b7a; --rule: #dce2e8;
+  --track: #8a97a6; --diverge: #b86e00; --diverge-tint: rgba(201, 120, 0, .10);
+  --sync: #0f8a6e; --sync-tint: rgba(15, 138, 110, .13);
+  --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12171d; --surface: #1a2129; --ink: #e6ebf0; --muted: #93a1b0; --rule: #2a333d;
+    --track: #6f7d8c; --diverge: #e9a23b; --diverge-tint: rgba(233, 162, 59, .12);
+    --sync: #3cc29e; --sync-tint: rgba(60, 194, 158, .14);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); }
+main { max-width: 1100px; margin: 0 auto; padding: 48px 16px 80px; }
+h1 { font-size: 2.4rem; line-height: 1.1; font-weight: 600; margin: 0 0 12px; letter-spacing: -.01em; }
+.lede { font-size: 1.15rem; margin: 0 0 6px; }
+.path { font: 13px var(--mono); color: var(--muted); margin: 0 0 28px; overflow-wrap: anywhere; }
+.how { max-width: 68ch; color: var(--muted); margin: 0 0 40px; }
+.key { display: inline-flex; gap: 6px; align-items: center; margin-right: 18px; white-space: nowrap; }
+.key svg { vertical-align: middle; }
+
+section { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; margin-bottom: 28px; }
+h2 { font-size: 1.2rem; font-weight: 600; margin: 0 0 6px; overflow-wrap: anywhere; }
+.story { margin: 0 0 20px; max-width: 75ch; }
+.story b { font-weight: 600; }
+.d { color: var(--diverge); } .s { color: var(--sync); }
+
+.tracks { display: grid; grid-template-columns: minmax(150px, 280px) 1fr; }
+.labels { padding-top: 52px; }
+.label { height: 44px; display: flex; flex-direction: column; justify-content: center; padding-right: 16px; min-width: 0; }
+.label .file { font: 500 14px var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.label .dir { font: 12px var(--mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chart { overflow-x: auto; }
+.chart svg { display: block; }
+.chart text { font-family: var(--mono); fill: var(--muted); }
+.chart text.nr { font-size: 13px; fill: var(--ink); }
+.chart text.sha { font-size: 11px; }
+.chart text.tag { font: 600 11px var(--sans); }
+
+.empty { font-size: 1.1rem; }
+@media (max-width: 640px) {
+  h1 { font-size: 1.9rem; }
+  section { padding: 16px; }
+  .tracks { grid-template-columns: 120px 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Late propagation</h1>
+  <p class="lede" id="lede"></p>
+  <p class="path" id="path"></p>
+  <p class="how">
+    A change reached some copies of a cloned fragment but not the others, and the copies left behind
+    were changed later. Each line below is one copy, followed across the commits where its clone class changed.<br>
+    <span class="key"><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="var(--ink)"/></svg>code changed</span>
+    <span class="key"><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="var(--surface)" stroke="var(--track)" stroke-width="2"/></svg>unchanged</span>
+    <span class="key"><svg width="22" height="14"><rect width="22" height="14" rx="2" fill="var(--diverge-tint)"/></svg>copies out of sync</span>
+  </p>
+  <div id="findings"></div>
+</main>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const COL = 72, ROW = 44, HEAD = 52, PAD = 36;
+const el = (tag, attrs = {}, text) => {
+  const n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const html = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
+// Name each copy by its file and its order in that file, so it can be followed across versions.
+function keyed(version) {
+  const seen = {};
+  return [...version.copies]
+    .sort((a, b) => a.file.localeCompare(b.file) || a.start - b.start)
+    .map(c => { seen[c.file] = (seen[c.file] || 0) + 1; return [`${c.file}#${seen[c.file]}`, c]; });
+}
+
+function render(f) {
+  const versions = f.versions.map(v => new Map(keyed(v)));
+  const rows = [];
+  versions.forEach(v => v.forEach((_, k) => { if (!rows.includes(k)) rows.push(k); }));
+  const at = (r, c) => versions[c] && versions[c].get(r);
+  const changed = (r, c) => c > 0 && at(r, c) && at(r, c - 1) && at(r, c).hash !== at(r, c - 1).hash;
+  const d = f.diverged, p = f.propagated;
+  const lagging = rows.filter(r => at(r, d) && at(r, d - 1) && !changed(r, d));
+  const leading = rows.filter(r => changed(r, d));
+  const v = i => f.versions[i];
+
+  const sec = html("section");
+  const files = [...new Set(rows.map(r => r.replace(/#\d+$/, "").split("/").pop()))];
+  sec.append(html("h2", "", files.join("  ·  ")));
+  const story = html("p", "story");
+  const copies = k => `${k} ${k === 1 ? "copy" : "copies"}`;
+  story.innerHTML =
+    `At <b class="d">commit #${v(d).nr}</b> (${v(d).commit}), ${copies(leading.length)} changed ` +
+    `and ${lagging.length} stayed behind. ${plural(v(p).nr - v(d).nr, "commit")} later, at ` +
+    `<b class="s">commit #${v(p).nr}</b> (${v(p).commit}), the ${lagging.length === 1 ? "copy" : "copies"} left behind changed too.`;
+  sec.append(story);
+
+  const tracks = html("div", "tracks");
+  const labels = html("div", "labels");
+  rows.forEach(r => {
+    const copy = at(r, p) || [...versions].reverse().find(m => m.has(r)).get(r);
+    const parts = copy.file.split("/");
+    const lab = html("div", "label");
+    lab.title = `${copy.file}, lines ${copy.start}–${copy.end} at commit #${v(p).nr}`;
+    lab.append(html("span", "file", parts.pop()));
+    lab.append(html("span", "dir", `lines ${copy.start}–${copy.end} in ${parts.join("/") || "."}`));
+    labels.append(lab);
+  });
+  tracks.append(labels);
+
+  const width = PAD * 2 + (f.versions.length - 1) * COL, height = HEAD + rows.length * ROW;
+  const svg = el("svg", { width, height, role: "img",
+    "aria-label": `Copies of the clone across ${f.versions.length} versions; diverged at commit ${v(d).nr}, caught up at commit ${v(p).nr}` });
+  const x = c => PAD + c * COL, y = i => HEAD + i * ROW + ROW / 2;
+
+  svg.append(el("rect", { x: x(d) - COL / 2, y: 0, width: x(p) - x(d) + COL, height, rx: 6, fill: "var(--diverge-tint)" }));
+  svg.append(el("rect", { x: x(p) - COL / 2, y: 0, width: COL, height, rx: 6, fill: "var(--sync-tint)" }));
+  svg.append(el("text", { x: x(d), y: 12, "text-anchor": "middle", class: "tag", style: "fill: var(--diverge)" }, "diverged"));
+  svg.append(el("text", { x: x(p), y: 12, "text-anchor": "middle", class: "tag", style: "fill: var(--sync)" }, "caught up"));
+
+  f.versions.forEach((ver, c) => {
+    svg.append(el("text", { x: x(c), y: 30, "text-anchor": "middle", class: "nr" }, `#${ver.nr}`));
+    svg.append(el("text", { x: x(c), y: 44, "text-anchor": "middle", class: "sha" }, ver.commit));
+  });
+
+  rows.forEach((r, i) => {
+    const behind = lagging.includes(r);
+    for (let c = 1; c < f.versions.length; c++) {
+      if (!at(r, c) || !at(r, c - 1)) continue;
+      const late = behind && c > d && c <= p;
+      svg.append(el("line", { x1: x(c - 1), x2: x(c), y1: y(i), y2: y(i), "stroke-width": late ? 3 : 2,
+        stroke: late ? "var(--diverge)" : "var(--track)", "stroke-dasharray": late ? "5 4" : "none" }));
+    }
+    f.versions.forEach((_, c) => {
+      const copy = at(r, c);
+      if (!copy) return;
+      const ch = changed(r, c);
+      const color = ch && c === d ? "var(--diverge)" : ch && c === p && behind ? "var(--sync)" : "var(--ink)";
+      const dot = ch ? el("circle", { cx: x(c), cy: y(i), r: 6, fill: color })
+                     : el("circle", { cx: x(c), cy: y(i), r: 5, fill: "var(--surface)", stroke: "var(--track)", "stroke-width": 2 });
+      dot.append(el("title", {}, `${copy.file}:${copy.start}–${copy.end} at commit #${f.versions[c].nr} (${f.versions[c].commit})` +
+        (c === 0 ? "" : ch ? ", code changed" : ", unchanged")));
+      svg.append(dot);
+    });
+  });
+
+  const chart = html("div", "chart");
+  chart.append(svg);
+  tracks.append(chart);
+  sec.append(tracks);
+  return sec;
+}
+
+const folder = DATA.results.replace(/\/+$/, "").split("/");
+const repo = folder[folder.length - 1] === "clone-results" ? folder[folder.length - 2] : folder[folder.length - 1];
+const n = DATA.findings.length;
+document.title = `Late propagation in ${repo}`;
+document.getElementById("lede").textContent =
+  `${repo}: ${n === 0 ? "no" : n} ${n === 1 ? "case" : "cases"} in ${plural(DATA.lineages, "clone lineage")}.`;
+document.getElementById("path").textContent = DATA.results;
+const list = document.getElementById("findings");
+if (n === 0) {
+  list.append(html("p", "empty", "In these commits, no copy was left behind and changed later. " +
+    "Try more commits with --first or --last, or another repository."));
+}
+DATA.findings.forEach(f => list.append(render(f)));
+</script>
+</body>
+</html>

@@ -76,6 +76,8 @@ def main() -> int:
         user["fixed_leaps"] = args.fixed_leaps
 
     limit_history(args.first, args.last)
+    for old in ("ccg_data.xml", "ccg_metrics.xml"):  # don't leave a previous run's result behind
+        (out / old).unlink(missing_ok=True)
     source = str(clean_clone(repo))
     # OmniCCG requires git_repository even when it copies from local_path.
     _, lineages, metrics = execute_omniccg(
