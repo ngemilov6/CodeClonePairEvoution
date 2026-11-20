@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install OmniCCG and build its bundled NiCad 6.2 into .venv.
-# Needs python3, gcc, make, unzip, curl and OpenTxl 11 (txl) installed first.
+# Needs python3, gcc, make, unzip, curl, Java and OpenTxl 11 (txl) installed first.
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -13,6 +13,10 @@ if [ ! -d vendor/OmniCCG-main ]; then
 fi
 python3 -m venv .venv
 .venv/bin/pip install --quiet --disable-pip-version-check -e vendor/OmniCCG-main/OmniCCG-CLI
+
+# Rascal, for the pattern detection in patterns/
+[ -f rascal-shell-stable.jar ] ||
+    curl -fL -o rascal-shell-stable.jar https://update.rascal-mpl.org/console/rascal-shell-stable.jar
 
 # NiCad 6.2 needs four fixes to build and run with GCC 15 and OpenTxl 11
 cd vendor/OmniCCG-main/OmniCCG-CLI/src/omniccg/tools/NiCad
