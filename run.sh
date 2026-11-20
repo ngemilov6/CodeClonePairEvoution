@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # ./run.sh <repo-dir> [--out DIR] [--fixed-leaps N | --from-commit SHA] [--first N | --last N]
 #     Runs OmniCCG on the repository (saving ccg_data.xml in the results folder),
-#     then the late propagation detection, and opens the report in the browser.
+#     then the clone pattern detection, and opens the report in the browser.
 # ./run.sh <repo-dir or results folder> --patterns-only [--out DIR]
-#     Skips OmniCCG and reruns only the detection on the saved ccg_data.xml.
+#     Skips OmniCCG and reruns only the pattern detection on the saved ccg_data.xml.
 set -eo pipefail
 here=$(cd "$(dirname "$0")" && pwd)
 
@@ -22,6 +22,6 @@ if [ ! -f "$out/ccg_data.xml" ]; then
 fi
 out=$(realpath "$out")
 echo
-cd "$here/patterns" && java -jar "$here/rascal-shell-stable.jar" LatePropagation "$out" 2>&1 |
+cd "$here/patterns" && java -jar "$here/rascal-shell-stable.jar" Patterns "$out" 2>&1 |
     grep -v -e '^\[INFO\]' -e '^WARNING' -e '^Job:' -e '^  - |'
-xdg-open "$out/late-propagation.html" > /dev/null 2>&1 &
+xdg-open "$out/patterns.html" > /dev/null 2>&1 &
