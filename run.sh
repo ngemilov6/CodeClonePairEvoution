@@ -10,7 +10,12 @@ here=$(cd "$(dirname "$0")" && pwd)
 patterns_only=false; args=()
 for a in "$@"; do if [ "$a" = --patterns-only ]; then patterns_only=true; else args+=("$a"); fi; done
 set -- "${args[@]}"
-$patterns_only || "$here/.venv/bin/python" "$here/clone_evo.py" "$@"
+if [ -x "$here/.venv/Scripts/python.exe" ]; then
+    venv_python="$here/.venv/Scripts/python.exe"
+else
+    venv_python="$here/.venv/bin/python"
+fi
+$patterns_only || "$venv_python" "$here/clone_evo.py" "$@"
 
 # The results folder: --out DIR, or <repo-dir>/clone-results, or the folder given
 out=${1%/}/clone-results

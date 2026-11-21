@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<results>
+  <clone_density>
+    <point>
+      <version>1</version>
+      <clones_density>11.15</clones_density>
+    </point>
+    <summary>
+      <versions_count_present>1</versions_count_present>
+      <avg_density_present>11.15</avg_density_present>
+      <avg_density_full_range>11.15</avg_density_full_range>
+    </summary>
+  </clone_density>
+  <total_clone_lineages>109</total_clone_lineages>
+  <total_amount_of_versions>1.00</total_amount_of_versions>
+  <change_patterns_of_lineages>
+    <consistent>0.00</consistent>
+    <same>100.00</same>
+    <inconsistent>0.00</inconsistent>
+  </change_patterns_of_lineages>
+  <status_of_clone_lineages>
+    <alive>
+      <count>109</count>
+      <percentage>100.00</percentage>
+    </alive>
+    <dead>
+      <count>0</count>
+      <percentage>0.00</percentage>
+    </dead>
+  </status_of_clone_lineages>
+  <length_of_dead_clone_lineages>
+    <min>0</min>
+    <avg>0.00</avg>
+    <max>0</max>
+  </length_of_dead_clone_lineages>
+  <evolution_pattern_of_versions/>
+  <change_pattern_of_versions>
+    <consistent>0.00</consistent>
+    <same>0.00</same>
+    <inconsistent>0.00</inconsistent>
+  </change_pattern_of_versions>
+  <kvolatile last_version="1">
+    <point k="0" count="0" cdf_dead="0.00" rvolatile="0.00"/>
+    <point k="1" count="0" cdf_dead="0.00" rvolatile="0.00"/>
+  </kvolatile>
+</results>

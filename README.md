@@ -16,6 +16,9 @@ Install these first:
 | Java (11 or newer) | for Rascal |
 | OpenTxl 11.3.7 (`txl` on your `PATH`) | for NiCad: https://github.com/CordyJ/OpenTxl/releases/tag/v11.3.7 |
 
+On Windows, also install Git for Windows and Visual Studio Build Tools with the C/C++
+command-line tools enabled. OpenTxl's `txlc` compiler requires them to build NiCad.
+
 Then, in this folder:
 
 ```bash

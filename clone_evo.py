@@ -7,7 +7,6 @@ Writes ccg_data.xml and ccg_metrics.xml to <repo-dir>/clone-results/, or to --ou
 Your repository is never changed: OmniCCG works on a fresh clone of it.
 """
 import argparse
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -25,7 +24,12 @@ def clean_clone(repo: Path) -> Path:
     OmniCCG uses for its workspace.
     """
     dest = Path(omniccg.core.__file__).parent / "cloned_repositories" / repo.name / "source" / repo.name
-    shutil.rmtree(dest, ignore_errors=True)
+    omniccg.core.safe_rmtree(dest)
+    if dest.exists():
+        raise RuntimeError(
+            f"Could not remove stale OmniCCG clone directory: {dest}\n"
+            "Close any process using it and run the command again."
+        )
     dest.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(["git", "clone", "--quiet", str(repo), str(dest)], check=True)
     return dest
@@ -44,8 +48,11 @@ def limit_history(first, last) -> None:
     def limited(ctx):
         original(ctx)
         hist = Path(ctx.paths.hist_file)
-        lines = [line for line in hist.read_text().splitlines() if line.strip()]
-        hist.write_text("\n".join(lines[-first:] if first else lines[:last]))
+        lines = [line for line in hist.read_text(encoding="utf-8").splitlines() if line.strip()]
+        hist.write_text(
+            "\n".join(lines[-first:] if first else lines[:last]),
+            encoding="utf-8",
+        )
 
     omniccg.core.PrepareGitHistory = limited
 

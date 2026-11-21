@@ -1,0 +1,912 @@
+<lineages>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="79" endline="100" hash="5522518644390174382"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="105" endline="126" hash="5774386599629073367"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="131" endline="147" hash="-6253746700546790988"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="152" endline="168" hash="6003900086758765241"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="254" endline="290" hash="6976044485733431777"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\Base64.java" startline="295" endline="327" hash="-4000018438123082898"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="153" endline="159" hash="-2935592572114076173"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="161" endline="167" hash="1429814251657383006"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="345" endline="358" hash="6626606878020528906"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="376" endline="389" hash="-4699637826122548170"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="360" endline="374" hash="1080579190319545512"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\CommonUtils.java" startline="391" endline="405" hash="5090476642429782597"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="81" endline="99" hash="6236959183331751903"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="81" endline="99" hash="-7610977994607446507"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="122" endline="129" hash="-262965303600343497"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="122" endline="129" hash="-262965303600343497"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="178" endline="189" hash="8919097402935465618"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="178" endline="189" hash="-328279059614225902"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="195" endline="206" hash="1581584671442795208"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="195" endline="206" hash="1920517570650281305"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="234" endline="249" hash="3854791265019194014"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="234" endline="249" hash="8995731967695284036"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="257" endline="274" hash="-5777143396169071097"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="257" endline="274" hash="6439714478778859537"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="290" endline="303" hash="-6978394248280780078"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="290" endline="303" hash="-3085783020717249752"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="308" endline="324" hash="-1923101334430364310"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="308" endline="324" hash="6740913276272725607"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="334" endline="353" hash="-5122857742848679364"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="334" endline="353" hash="-3139741035145759626"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="4">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="374" endline="396" hash="7049926114398712313"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="374" endline="396" hash="2522740503430520757"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="401" endline="427" hash="-3803697491893365562"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="401" endline="427" hash="7142468965748480740"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="433" endline="439" hash="7200866460827982578"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="433" endline="439" hash="2001706025376389032"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="509" endline="514" hash="-2618700853473204648"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="509" endline="514" hash="-7610180094532601409"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="538" endline="549" hash="3211765302056898367"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="538" endline="549" hash="-5578334810394259622"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="593" endline="604" hash="-3836326397167343231"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="593" endline="604" hash="-7637960111091310386"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="629" endline="638" hash="-2468618990483102980"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="629" endline="638" hash="5287760874996348185"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="714" endline="720" hash="6610372121824687088"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="714" endline="720" hash="-8975929109563921456"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IntKeyMap.java" startline="722" endline="728" hash="-8701920456088818380"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\LongKeyMap.java" startline="722" endline="728" hash="3381709279703892455"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\IOUtils.java" startline="32" endline="40" hash="4105720610696968575"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\utils\ContentUtils.java" startline="355" endline="363" hash="-6319771749935837671"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\xml\XMLBuilder.java" startline="420" endline="438" hash="-6151145383466680073"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\xml\XMLBuilder.java" startline="509" endline="527" hash="-4168180927278649732"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\xml\XMLBuilder.java" startline="488" endline="507" hash="4520778195735082517"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\xml\XMLUtils.java" startline="42" endline="52" hash="-3116725660668108794"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\modules\org.jkiss.utils\src\org\jkiss\utils\xml\XMLUtils.java" startline="54" endline="64" hash="-3749610556083517123"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\core\DBeaverActivator.java" startline="142" endline="150" hash="-63861373664709175"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\Activator.java" startline="129" endline="137" hash="-63861373664709175"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\DBUtils.java" startline="543" endline="554" hash="-6498516160852347741"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\DBUtils.java" startline="556" endline="567" hash="6081273231515133754"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\ExternalContentStorage.java" startline="79" endline="97" hash="2068941672905940061"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\TemporaryContentStorage.java" startline="95" endline="113" hash="2773570629192162107"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCConnectionImpl.java" startline="533" endline="545" hash="4499864401510736585"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCConnectionImpl.java" startline="548" endline="560" hash="-3550068866893704586"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCPreparedStatementImpl.java" startline="65" endline="74" hash="7972683790351554992"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="132" endline="141" hash="4634224988536106029"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCPreparedStatementImpl.java" startline="81" endline="92" hash="5742264656495736846"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCPreparedStatementImpl.java" startline="95" endline="106" hash="3960411807874143287"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCPreparedStatementImpl.java" startline="109" endline="120" hash="6729839460285215042"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCResultSetImpl.java" startline="157" endline="169" hash="2236591892186067698"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCResultSetImpl.java" startline="172" endline="183" hash="-4563476288530002379"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="8">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="303" endline="315" hash="6493558883245532759"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="366" endline="378" hash="1198601524651273068"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="381" endline="393" hash="7394544724334668641"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="396" endline="408" hash="-5912050105886808256"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="337" endline="349" hash="8465190876610535745"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="441" endline="453" hash="-2010409990395207600"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="411" endline="423" hash="6528353526193052598"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\api\JDBCStatementImpl.java" startline="426" endline="438" hash="7370054989476005655"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCBooleanValueHandler.java" startline="96" endline="103" hash="-1468690849001915671"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCNumberValueHandler.java" startline="198" endline="205" hash="-907584818140553378"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentBLOB.java" startline="77" endline="116" hash="-2831544808642948153"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentCLOB.java" startline="78" endline="117" hash="3897414914058771038"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentBLOB.java" startline="119" endline="134" hash="1331962225294092983"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\data\OracleContentOpaque.java" startline="77" endline="84" hash="1331962225294092983"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentBytes.java" startline="56" endline="64" hash="5801811103349062171"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentChars.java" startline="59" endline="68" hash="1713897618283289912"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentBytes.java" startline="75" endline="80" hash="6951027927026047891"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentChars.java" startline="83" endline="88" hash="8520780917974508163"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentBytes.java" startline="146" endline="163" hash="1150566398761486883"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentChars.java" startline="151" endline="165" hash="-1047916887054748144"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentCLOB.java" startline="120" endline="135" hash="5266437718388987395"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentXML.java" startline="89" endline="104" hash="5266437718388987395"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentCLOB.java" startline="138" endline="186" hash="8185390438770997222"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCContentXML.java" startline="107" endline="158" hash="1121501974306174836"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\data\JDBCDateTimeValueHandler.java" startline="293" endline="317" hash="-6028703229797691425"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\data\MySQLDateTimeValueHandler.java" startline="40" endline="64" hash="7574649848669895697"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\JDBCUtils.java" startline="57" endline="70" hash="6100059094286426424"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\jdbc\JDBCUtils.java" startline="82" endline="95" hash="1718156341632856710"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\project\BookmarksHandlerImpl.java" startline="70" endline="76" hash="6038175129176371078"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\project\DefaultResourceHandlerImpl.java" startline="80" endline="86" hash="6038175129176371078"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\project\ScriptsHandlerImpl.java" startline="138" endline="144" hash="6038175129176371078"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\struct\AbstractTableConstraintColumn.java" startline="32" endline="39" hash="275158327193558405"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\struct\AbstractTableIndexColumn.java" startline="40" endline="47" hash="6546856780079565650"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\impl\struct\AbstractTriggerColumn.java" startline="39" endline="46" hash="6546856780079565650"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="6">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\model\navigator\DBNProjectDatabases.java" startline="176" endline="183" hash="-7567274782401955514"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectCreateWizard.java" startline="65" endline="72" hash="1103682825393902111"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\scripts\ScriptsImportWizard.java" startline="198" endline="205" hash="4744440334192983246"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\scripts\ScriptsExportWizard.java" startline="76" endline="83" hash="4951227056376797078"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectImportWizard.java" startline="84" endline="91" hash="3833982579783419206"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectExportWizard.java" startline="83" endline="90" hash="6625923500298340542"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\registry\DataFormatterRegistry.java" startline="114" endline="146" hash="-5662742209780362172"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\runtime\sql\SQLQueryParameterRegistry.java" startline="71" endline="101" hash="-3739563362306247014"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\runtime\qm\meta\QMMCollector.java" startline="185" endline="195" hash="-72491990843245920"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\runtime\qm\meta\QMMCollector.java" startline="198" endline="208" hash="-8694522282968338816"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\runtime\qm\meta\QMMSessionInfo.java" startline="120" endline="130" hash="1640715804969148973"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\runtime\qm\meta\QMMSessionInfo.java" startline="132" endline="141" hash="2857473061049173030"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceAutoCommitHandler.java" startline="51" endline="58" hash="-7050056087151702201"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceRollbackHandler.java" startline="41" endline="48" hash="-7528837354819787740"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceCommitHandler.java" startline="41" endline="48" hash="-7050056087151702201"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceCommitHandler.java" startline="50" endline="73" hash="-1702176537661482921"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceRollbackHandler.java" startline="50" endline="73" hash="7960599546589700706"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceConnectHandler.java" startline="42" endline="49" hash="-3369662180043390989"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceDisconnectHandler.java" startline="35" endline="42" hash="9101585300976899988"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\datasource\DataSourceInvalidateHandler.java" startline="33" endline="40" hash="-9067542737954860318"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="5">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\navigator\NavigatorActionSetActiveObject.java" startline="54" endline="62" hash="8025090878430745762"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.test\src\org\jkiss\dbeaver\ext\test\handlers\HandlerObjectValidate.java" startline="72" endline="80" hash="7739164383107052781"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\navigator\NavigatorHandlerObjectBase.java" startline="225" endline="232" hash="257669430543617811"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\EntityEditor.java" startline="257" endline="264" hash="-5973191249903320111"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\struct\AttributesSelectorDialog.java" startline="178" endline="185" hash="-4161755154105804266"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="4">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\navigator\NavigatorHandlerCreateLink.java" startline="72" endline="79" hash="6765209269310946089"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\ContentEditorContributor.java" startline="280" endline="289" hash="-8992089373652437702"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\ContentEditorContributor.java" startline="323" endline="332" hash="-4801888316120916322"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\actions\navigator\NavigatorHandlerProjectRefresh.java" startline="44" endline="51" hash="-7735612351412897614"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\imageview\ImageViewCanvas.java" startline="344" endline="352" hash="-1720380263325985879"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\imageview\ImageViewCanvas.java" startline="357" endline="365" hash="7718175747672691549"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="713" endline="727" hash="3576674803969493309"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="1549" endline="1567" hash="5183269601035070270"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="1839" endline="1858" hash="6592437884593175557"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="740" endline="754" hash="1203741324792087058"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="1585" endline="1602" hash="-5357964181435867719"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="4143" endline="4164" hash="3077514200359036354"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="4199" endline="4219" hash="-3224432795297773398"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\LightGrid.java" startline="4304" endline="4328" hash="372077288581100758"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\renderers\DefaultColumnFooterRenderer.java" startline="122" endline="153" hash="-3384166655579071160"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\controls\lightgrid\renderers\DefaultColumnHeaderRenderer.java" startline="225" endline="256" hash="-3106513524543269162"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\connection\ConnectionPageDriver.java" startline="51" endline="63" hash="-5229003960474125859"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\connection\MigrateConnectionWizard.java" startline="192" endline="202" hash="-8689795190097181055"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\connection\MigrateConnectionWizard.java" startline="158" endline="166" hash="-1307933103968201233"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.import-config\src\org\jkiss\dbeaver\ext\import_config\wizards\ConfigImportWizardPage.java" startline="120" endline="128" hash="7519452360251848701"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\driver\DriverEditDialog.java" startline="465" endline="472" hash="-2740203860482826952"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\dialogs\driver\DriverEditDialog.java" startline="482" endline="489" hash="9020190915919385859"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\binary\BinaryEditor.java" startline="73" endline="103" hash="1531370629669179930"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\parts\ContentImageEditorPart.java" startline="178" endline="205" hash="3734979608240645707"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\ContentEditorContributor.java" startline="270" endline="302" hash="-2639768039524445217"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\ContentEditorContributor.java" startline="313" endline="345" hash="1505329008090184361"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\parts\ContentTextEditorPart.java" startline="76" endline="82" hash="5151304566269639751"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\content\parts\ContentXMLEditorPart.java" startline="77" endline="83" hash="5151304566269639751"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\EntityEditor.java" startline="641" endline="684" hash="-3728977138086747772"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\properties\PropertyTabDescriptorProvider.java" startline="160" endline="202" hash="-410092508444682568"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\EntityNodeEditor.java" startline="134" endline="157" hash="-1959790087121940931"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\properties\NodeEditorSection.java" startline="200" endline="223" hash="1993736287003211337"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\handlers\PreviewChangesHandler.java" startline="33" endline="40" hash="-8406846006009899405"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\handlers\RedoChangesHandler.java" startline="40" endline="47" hash="-4077631964186203387"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\entity\handlers\UndoChangesHandler.java" startline="40" endline="47" hash="-5344319556401118627"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\CreateSQLEditorHandler.java" startline="36" endline="53" hash="-372006381310901710"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\OpenSQLEditorHandler.java" startline="36" endline="56" hash="-4689828309748566901"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\ExecuteScriptHandler.java" startline="33" endline="40" hash="8990108224766093302"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\ExplainPlanHandler.java" startline="32" endline="39" hash="984820145993856769"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\OpenSQLFileHandler.java" startline="29" endline="37" hash="100401501615307752"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\handlers\SaveSQLFileHandler.java" startline="29" endline="37" hash="7920519972431926482"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\indent\SQLAutoIndentStrategy.java" startline="113" endline="125" hash="3314411430106727608"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\indent\SQLCommentAutoIndentStrategy.java" startline="55" endline="67" hash="3818873585612263191"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\sql\SQLEditorSourceViewerConfiguration.java" startline="235" endline="244" hash="3652358439939716634"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\text\TextChangeHover.java" startline="75" endline="82" hash="2551010509442597205"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\editors\text\TextChangeHover.java" startline="61" endline="68" hash="-2870338013039268746"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\data\wizard\DataExportPageInit.java" startline="69" endline="74" hash="6161866612472145263"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\views\plan\PlanNodesTree.java" startline="83" endline="89" hash="-5073592392185857161"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\views\session\SessionTable.java" startline="73" endline="79" hash="-5073592392185857161"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\data\wizard\DataExportPageOutput.java" startline="141" endline="147" hash="8140639436323318572"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\data\wizard\DataExportPageOutput.java" startline="178" endline="185" hash="-5885509455778037243"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="4">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectCreateWizard.java" startline="61" endline="87" hash="2385319879386742066"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectImportWizard.java" startline="80" endline="107" hash="-3260215122126961098"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectExportWizard.java" startline="78" endline="105" hash="2123281783290332642"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\scripts\ScriptsExportWizard.java" startline="71" endline="98" hash="-6827891283816212722"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\project\ProjectExportWizardPage.java" startline="165" endline="178" hash="-5550150107906684396"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\scripts\ScriptsImportWizardPage.java" startline="108" endline="121" hash="2729376055417562014"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\export\scripts\ScriptsExportWizardPage.java" startline="147" endline="160" hash="9125992542081078682"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\OverlayImageDescriptor.java" startline="86" endline="98" hash="-7359111010963541365"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\OverlayImageDescriptor.java" startline="113" endline="125" hash="941658577147922962"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\OverlayImageDescriptor.java" startline="99" endline="111" hash="-678732642854055816"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\OverlayImageDescriptor.java" startline="126" endline="138" hash="8590838352952214669"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\UIUtils.java" startline="74" endline="84" hash="-3109073491911372631"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\UIUtils.java" startline="89" endline="99" hash="6496744118299332629"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\UIUtils.java" startline="317" endline="327" hash="-5807905496836416594"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\UIUtils.java" startline="329" endline="339" hash="3697979233233707406"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\views\qm\QueryManagerClearHandler.java" startline="30" endline="36" hash="5296182245117633621"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.core\src\org\jkiss\dbeaver\ui\views\qm\QueryManagerFilterHandler.java" startline="30" endline="36" hash="2648112893999626249"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="5">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\action\ERDHandlerPrint.java" startline="36" endline="45" hash="5364603574676126896"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\action\ERDHandlerSelectAll.java" startline="37" endline="47" hash="4003585686039082828"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\action\ERDHandlerRedo.java" startline="33" endline="42" hash="-1307343721979741387"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\action\ERDHandlerUndo.java" startline="36" endline="45" hash="623664912202864573"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\action\ERDHandlerSaveImage.java" startline="36" endline="45" hash="3974777683809486036"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\editor\ERDEditorEmbedded.java" startline="112" endline="146" hash="-4835150004442072026"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\editor\ERDEditorStandalone.java" startline="116" endline="154" hash="-5620202186467701469"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\AttributePart.java" startline="103" endline="116" hash="-5233337373915361394"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\EntityPart.java" startline="124" endline="137" hash="991702137417862071"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\NotePart.java" startline="113" endline="119" hash="-5635942253446609015"></source>
+			<source file="C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\NotePart.java" startline="125" endline="131" hash="3150500193868627380"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\PropertyAwarePart.java" startline="121" endline="171" hash="2528478682918465321"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\part\PropertyAwarePart.java" startline="176" endline="226" hash="3330591346744983465"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\policy\EntityDirectEditPolicy.java" startline="81" endline="87" hash="-2810742315794933473"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.erd\src\org\jkiss\dbeaver\ext\erd\policy\NoteDirectEditPolicy.java" startline="81" endline="87" hash="6520699023201967300"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\edit\GenericIndexManager.java" startline="52" endline="92" hash="-1559277143032448022"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\edit\MySQLIndexManager.java" startline="49" endline="88" hash="-1882123679140436724"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\model\GenericTableIndexColumn.java" startline="34" endline="42" hash="-481008174191207286"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleTableIndexColumn.java" startline="34" endline="44" hash="-3801329209793093260"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\model\GenericTableIndexColumn.java" startline="44" endline="50" hash="-1901070450140171299"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleTableIndexColumn.java" startline="46" endline="52" hash="5576675201102681372"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\model\IndexCache.java" startline="46" endline="68" hash="7934834598558661313"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\model\PrimaryKeysCache.java" startline="45" endline="63" hash="6467591335422110674"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.generic\src\org\jkiss\dbeaver\ext\generic\views\GenericConnectionPage.java" startline="73" endline="110" hash="4702582166170404433"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.wmi\src\org\jkiss\dbeaver\ext\wmi\views\WMIConnectionPage.java" startline="61" endline="99" hash="6849352849080196884"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\views\MySQLConnectionPage.java" startline="61" endline="99" hash="3735066735251512417"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\data\EnumViewDialog.java" startline="79" endline="92" hash="234998793372331816"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\data\MySQLSetValueHandler.java" startline="47" endline="59" hash="-903170363857643980"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\edit\MySQLConstraintManager.java" startline="82" endline="91" hash="5010626530542166817"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\edit\OracleConstraintManager.java" startline="83" endline="92" hash="2302709843295523618"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\edit\MySQLTableColumnManager.java" startline="52" endline="66" hash="-7589112433881081276"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\edit\OracleTableColumnManager.java" startline="53" endline="67" hash="8009268279121156536"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\edit\MySQLTableManager.java" startline="75" endline="84" hash="3761273769126941728"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\edit\OracleTableManager.java" startline="63" endline="72" hash="3761273769126941728"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLCatalog.java" startline="325" endline="343" hash="-2551020955652567954"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLCatalog.java" startline="363" endline="381" hash="7579725508245391555"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLTable.java" startline="111" endline="119" hash="-3239376381839124391"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLView.java" startline="129" endline="137" hash="-3239376381839124391"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLTable.java" startline="202" endline="250" hash="4402090735206194270"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\MySQLTableBase.java" startline="96" endline="144" hash="4402090735206194270"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\model\session\MySQLSessionManager.java" startline="57" endline="78" hash="8108044609185298490"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\session\OracleServerSessionManager.java" startline="58" endline="82" hash="-1608807177500775795"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\tools\MySQLScriptExecuteWizardPageSettings.java" startline="113" endline="120" hash="4964643342987011385"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\tools\OracleScriptExecuteWizardPageSettings.java" startline="66" endline="73" hash="-489483328406543973"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="3">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\tools\MySQLToolExport.java" startline="34" endline="42" hash="-8810251773637652062"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\tools\MySQLToolImport.java" startline="34" endline="42" hash="-4733929369428085909"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.mysql\src\org\jkiss\dbeaver\ext\mysql\tools\MySQLToolScript.java" startline="41" endline="49" hash="-956571723571608281"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\edit\OracleMaterializedViewManager.java" startline="48" endline="57" hash="-3147517854721221778"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\edit\OracleViewManager.java" startline="48" endline="57" hash="3122267174176371242"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="4">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleDataType.java" startline="220" endline="226" hash="5664371871601680533"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OraclePackage.java" startline="81" endline="87" hash="5664371871601680533"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleTrigger.java" startline="205" endline="211" hash="-2016501165315372554"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleProcedureStandalone.java" startline="101" endline="107" hash="5664371871601680533"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleDataType.java" startline="247" endline="253" hash="6127714329978757119"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OraclePackage.java" startline="97" endline="103" hash="6127714329978757119"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleDataType.java" startline="503" endline="511" hash="1438829941192901709"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleDataType.java" startline="521" endline="532" hash="-386575276740118248"></source>
+		</class>
+	</version>
+</lineage>
+<lineage>
+	<version nr="1" hash="371fb3a" evolution="None" change="None">
+		<class nclones="2">
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleSchema.java" startline="412" endline="434" hash="-4208657613607318528"></source>
+			<source file="\\?\C:\Users\Noel Pinto\Documents\SoftwareEvolutionResearchProjects\CodeClonePairEvoution\vendor\OmniCCG-main\OmniCCG-CLI\src\omniccg\cloned_repositories\dbeaver\dataset\production\plugins\org.jkiss.dbeaver.oracle\src\org\jkiss\dbeaver\ext\oracle\model\OracleSchema.java" startline="481" endline="504" hash="-2941255915310520408"></source>
+		</class>
+	</version>
+</lineage>
+</lineages>

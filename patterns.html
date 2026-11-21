@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clone patterns</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #f5f7f9; --surface: #ffffff; --ink: #18202b; --muted: #5e6b7a; --rule: #dce2e8;
+  --track: #8a97a6; --diverge: #b86e00; --diverge-tint: rgba(201, 120, 0, .10);
+  --sync: #0f8a6e; --sync-tint: rgba(15, 138, 110, .13);
+  --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12171d; --surface: #1a2129; --ink: #e6ebf0; --muted: #93a1b0; --rule: #2a333d;
+    --track: #6f7d8c; --diverge: #e9a23b; --diverge-tint: rgba(233, 162, 59, .12);
+    --sync: #3cc29e; --sync-tint: rgba(60, 194, 158, .14);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); }
+main { max-width: 1100px; margin: 0 auto; padding: 48px 16px 80px; }
+h1 { font-size: 2.4rem; line-height: 1.1; font-weight: 600; margin: 0 0 12px; letter-spacing: -.01em; }
+.lede { font-size: 1.15rem; margin: 0 0 6px; }
+.path { font: 13px var(--mono); color: var(--muted); margin: 0 0 24px; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
+nav a { color: var(--ink); text-decoration: none; border: 1px solid var(--rule); background: var(--surface);
+        border-radius: 999px; padding: 6px 14px; }
+nav a:hover { border-color: var(--track); }
+nav a:focus-visible, summary:focus-visible { outline: 2px solid var(--sync); outline-offset: 2px; }
+nav b { font-weight: 600; margin-left: 6px; }
+.keys { color: var(--muted); margin: 0 0 40px; }
+.key { display: inline-flex; gap: 6px; align-items: center; margin-right: 18px; white-space: nowrap; }
+
+.pattern { margin: 0 0 56px; scroll-margin-top: 16px; }
+h2 { font-size: 1.7rem; font-weight: 600; margin: 0 0 8px; }
+.about { max-width: 70ch; color: var(--muted); margin: 0 0 24px; }
+.none { font-size: 1.05rem; margin: 0; }
+
+article { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 6px; overflow-wrap: anywhere; }
+.story { margin: 0 0 20px; max-width: 75ch; }
+.story b { font-weight: 600; }
+.d { color: var(--diverge); } .s { color: var(--sync); }
+
+.tracks { display: grid; grid-template-columns: minmax(150px, 280px) 1fr; }
+.labels { padding-top: 52px; }
+.label { height: 44px; display: flex; flex-direction: column; justify-content: center; padding-right: 16px; min-width: 0; }
+.label .file { font: 500 14px var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.label .dir { font: 12px var(--mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chart { overflow-x: auto; }
+.chart svg { display: block; }
+.chart text { font-family: var(--mono); fill: var(--muted); }
+.chart text.nr { font-size: 13px; fill: var(--ink); }
+.chart text.sha { font-size: 11px; }
+.chart text.tag { font: 600 11px var(--sans); }
+
+details { margin-top: 8px; }
+summary { cursor: pointer; color: var(--muted); padding: 8px 0; }
+@media (max-width: 640px) {
+  h1 { font-size: 1.9rem; }
+  article { padding: 16px; }
+  .tracks { grid-template-columns: 120px 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Clone patterns</h1>
+  <p class="lede" id="lede"></p>
+  <p class="path" id="path"></p>
+  <nav id="nav" aria-label="Patterns"></nav>
+  <p class="keys">
+    Each line is one copy of a cloned fragment, followed across the commits where its clone class changed.<br>
+    <span class="key"><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--ink)"/></svg>code changed</span>
+    <span class="key"><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="var(--surface)" stroke="var(--track)" stroke-width="2"/></svg>unchanged</span>
+    <span class="key"><svg width="22" height="14" aria-hidden="true"><rect width="22" height="14" rx="2" fill="var(--diverge-tint)"/></svg>copies out of sync</span>
+    <span class="key"><svg width="22" height="14" aria-hidden="true"><rect width="22" height="14" rx="2" fill="var(--sync-tint)"/></svg>all copies changed together</span>
+  </p>
+  <div id="patterns"></div>
+</main>
+
+<script type="application/json" id="data">{"patterns":[{"findings":[],"name":"Late propagation","id":"late-propagation"},{"findings":[],"name":"Boiler-plating","id":"boilerplate"}],"lineages":109,"results":"/C:/Users/Noel Pinto/Documents/SoftwareEvolutionResearchProjects/CodeClonePairEvoution"}</script>
+<script>
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const ABOUT = {
+  "late-propagation":
+    "A change reached some copies of a cloned fragment but not the others, and the copies left behind " +
+    "were changed later. Until then the copies behaved differently, which is how clones cause bugs.",
+  "boilerplate":
+    "Copies in the same file or directory that differ a little, for example only in a type, and that are " +
+    "always changed together, never one alone. Kapser and Godfrey call this boiler-plating due to language " +
+    "in-expressiveness: code the language can't express once, kept in step by hand.",
+};
+const SHOWN = 10;  // findings shown before "Show more"
+const COL = 72, ROW = 44, HEAD = 52, PAD = 36;
+
+const el = (tag, attrs = {}, text) => {
+  const n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const html = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const plural = (n, word, words = word + "s") => `${n} ${n === 1 ? word : words}`;
+const copies = n => plural(n, "copy", "copies");
+
+// Name each copy by its file and its order in that file, so it can be followed across versions.
+function keyed(version) {
+  const seen = {};
+  return [...version.copies]
+    .sort((a, b) => a.file.localeCompare(b.file) || a.start - b.start)
+    .map(c => { seen[c.file] = (seen[c.file] || 0) + 1; return [`${c.file}#${seen[c.file]}`, c]; });
+}
+
+// One finding: a heading, a sentence, and the copies as tracks over the lineage's versions.
+function render(f, kind) {
+  // OmniCCG can record several versions for one commit: show one column per commit, its last version.
+  const groups = [];
+  f.versions.forEach((v, i) => {
+    const g = groups[groups.length - 1];
+    if (g && g.nr === v.nr) g.idx.push(i); else groups.push({ nr: v.nr, idx: [i] });
+  });
+  const V = groups.map(g => f.versions[g.idx[g.idx.length - 1]]);
+  const column = i => groups.findIndex(g => g.idx.includes(i));
+  const versions = V.map(v => new Map(keyed(v)));
+  const rows = [];
+  versions.forEach(v => v.forEach((_, k) => { if (!rows.includes(k)) rows.push(k); }));
+  const at = (r, c) => versions[c] && versions[c].get(r);
+  const changed = (r, c) => c > 0 && at(r, c) && at(r, c - 1) && at(r, c).hash !== at(r, c - 1).hash;
+  const late = kind === "late-propagation";
+  const d = column(f.diverged), p = column(f.propagated);
+  const lagging = late ? rows.filter(r => at(r, d) && at(r, d - 1) && !changed(r, d)) : [];
+  // Columns where every copy changed: no hash of the commit before is still there (OmniCCG's rule).
+  const hashes = c => new Set(V[c].copies.map(x => x.hash));
+  const together = V.map((_, c) => c > 0 && [...hashes(c)].every(h => !hashes(c - 1).has(h)) ? c : -1).filter(c => c >= 0);
+  const focus = late ? p : V.length - 1;  // the version whose line numbers the labels show
+
+  const card = html("article");
+  card.append(html("h3", "", [...new Set(rows.map(r => r.replace(/#\d+$/, "").split("/").pop()))].join(", ")));
+  const story = html("p", "story");
+  if (late) {
+    const leading = rows.filter(r => changed(r, d)).length;
+    story.innerHTML =
+      `At <b class="d">commit #${V[d].nr}</b> (${V[d].commit}), ${copies(leading)} changed ` +
+      `and ${lagging.length} stayed behind. ${plural(V[p].nr - V[d].nr, "commit")} later, at ` +
+      `<b class="s">commit #${V[p].nr}</b> (${V[p].commit}), the ${lagging.length === 1 ? "copy" : "copies"} left behind changed too.`;
+  } else {
+    const commits = together.map(c => V[c].nr);
+    const dir = V[focus].copies[0].file.split("/").slice(0, -1).join("/") || ".";
+    story.innerHTML =
+      `${copies(V[focus].copies.length)} in <b>${dir}</b>, changed together ` +
+      `<b class="s">${plural(commits.length, "time")}</b> (at ${commits.map(n => "#" + n).join(", ")}) and never one alone.`;
+  }
+  card.append(story);
+
+  const tracks = html("div", "tracks");
+  const labels = html("div", "labels");
+  rows.forEach(r => {
+    const copy = at(r, focus) || [...versions].reverse().find(m => m.has(r)).get(r);
+    const parts = copy.file.split("/");
+    const lab = html("div", "label");
+    lab.title = `${copy.file}, lines ${copy.start}–${copy.end}`;
+    lab.append(html("span", "file", parts.pop()));
+    lab.append(html("span", "dir", `lines ${copy.start}–${copy.end} in ${parts.join("/") || "."}`));
+    labels.append(lab);
+  });
+  tracks.append(labels);
+
+  const width = PAD * 2 + (V.length - 1) * COL, height = HEAD + rows.length * ROW;
+  const svg = el("svg", { width, height, role: "img", "aria-label": late
+    ? `${rows.length} copies over ${V.length} versions; diverged at commit ${V[d].nr}, caught up at commit ${V[p].nr}`
+    : `${rows.length} copies over ${V.length} versions; all changed together ${together.length} times` });
+  const x = c => PAD + c * COL, y = i => HEAD + i * ROW + ROW / 2;
+  const band = (from, to, fill) => svg.append(el("rect",
+    { x: x(from) - COL / 2, y: 0, width: x(to) - x(from) + COL, height, rx: 6, fill }));
+  const tag = (c, text, color) => svg.append(el("text",
+    { x: x(c), y: 12, "text-anchor": "middle", class: "tag", style: `fill: ${color}` }, text));
+
+  if (late) {
+    band(d, p, "var(--diverge-tint)"); band(p, p, "var(--sync-tint)");
+    tag(d, "diverged", "var(--diverge)"); tag(p, "caught up", "var(--sync)");
+  } else {
+    together.forEach(c => { band(c, c, "var(--sync-tint)"); tag(c, "together", "var(--sync)"); });
+  }
+  V.forEach((ver, c) => {
+    svg.append(el("text", { x: x(c), y: 30, "text-anchor": "middle", class: "nr" }, `#${ver.nr}`));
+    svg.append(el("text", { x: x(c), y: 44, "text-anchor": "middle", class: "sha" }, ver.commit));
+  });
+
+  rows.forEach((r, i) => {
+    const behind = lagging.includes(r);
+    for (let c = 1; c < V.length; c++) {
+      if (!at(r, c) || !at(r, c - 1)) continue;
+      const out = behind && c > d && c <= p;
+      svg.append(el("line", { x1: x(c - 1), x2: x(c), y1: y(i), y2: y(i), "stroke-width": out ? 3 : 2,
+        stroke: out ? "var(--diverge)" : "var(--track)", "stroke-dasharray": out ? "5 4" : "none" }));
+    }
+    V.forEach((ver, c) => {
+      const copy = at(r, c);
+      if (!copy) return;
+      const ch = changed(r, c);
+      const color = late && ch && c === d ? "var(--diverge)" : ch && ((late && c === p && behind) || (!late && together.includes(c)))
+        ? "var(--sync)" : "var(--ink)";
+      const dot = ch ? el("circle", { cx: x(c), cy: y(i), r: 6, fill: color })
+                     : el("circle", { cx: x(c), cy: y(i), r: 5, fill: "var(--surface)", stroke: "var(--track)", "stroke-width": 2 });
+      dot.append(el("title", {}, `${copy.file}:${copy.start}–${copy.end} at commit #${ver.nr} (${ver.commit})` +
+        (c === 0 ? "" : ch ? ", code changed" : ", unchanged")));
+      svg.append(dot);
+    });
+  });
+
+  const chart = html("div", "chart");
+  chart.append(svg);
+  tracks.append(chart);
+  card.append(tracks);
+  return card;
+}
+
+const folder = DATA.results.replace(/\/+$/, "").split("/");
+const repo = folder[folder.length - 1] === "clone-results" ? folder[folder.length - 2] : folder[folder.length - 1];
+document.title = `Clone patterns in ${repo}`;
+document.getElementById("lede").textContent = `${repo}: ${plural(DATA.lineages, "clone lineage")} analysed.`;
+document.getElementById("path").textContent = DATA.results;
+
+const nav = document.getElementById("nav"), list = document.getElementById("patterns");
+DATA.patterns.forEach(pt => {
+  const link = html("a", "", pt.name);
+  link.href = `#${pt.id}`;
+  link.append(html("b", "", String(pt.findings.length)));
+  nav.append(link);
+
+  const sec = html("section", "pattern");
+  sec.id = pt.id;
+  sec.append(html("h2", "", `${pt.name}: ${pt.findings.length === 0 ? "none found" : plural(pt.findings.length, "case")}`));
+  sec.append(html("p", "about", ABOUT[pt.id] || ""));
+  if (pt.findings.length === 0) {
+    sec.append(html("p", "none", "None in these commits. Try more commits with --first or --last, or another repository."));
+  }
+  pt.findings.slice(0, SHOWN).forEach(f => sec.append(render(f, pt.id)));
+  if (pt.findings.length > SHOWN) {
+    const more = html("details");
+    more.append(html("summary", "", `Show ${pt.findings.length - SHOWN} more`));
+    more.addEventListener("toggle", () => {
+      if (more.open && more.children.length === 1) pt.findings.slice(SHOWN).forEach(f => more.append(render(f, pt.id)));
+    }, { once: false });
+    sec.append(more);
+  }
+  list.append(sec);
+});
+</script>
+</body>
+</html>
