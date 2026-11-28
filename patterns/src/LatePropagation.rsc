@@ -13,6 +13,7 @@ data Finding = finding(int diverged, int propagated);  // indices into the linea
 // at the first later version where a lagging copy's code changes, the leading
 // copies keep theirs, so only the copies left behind were changed.
 list[Finding] latePropagation(Lineage versions) {
+    versions = perCommit(versions);
     findings = [];
     for (i <- [1..size(versions)], versions[i].change == "Inconsistent") {
         leading = hashes(versions[i]) - hashes(versions[i - 1]);

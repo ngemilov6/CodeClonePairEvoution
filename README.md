@@ -55,8 +55,15 @@ By default, every commit is analysed. That takes about 2–3 seconds per commit,
 | `--last N` | the newest N commits |
 | `--fixed-leaps N` | every Nth commit |
 | `--from-commit SHA` | the commits after SHA |
+| `--first-parent` | follow only the main line, excluding side branches |
+| `--java-only` | skip commits that do not change a `.java` file |
 
 `--fixed-leaps` and `--from-commit` choose the commits first, then `--first` or `--last` keeps part of that choice. For example, `--fixed-leaps 10 --last 50` gives the newest 50 of every 10th commit.
+
+Use `--first-parent` to avoid mixing side branches into the genealogy. Use
+`--java-only` to skip commits that cannot affect Java clone detection. These
+filters can be combined, and can also be combined with fixed leaps or commit
+limits.
 
 ### Where the results go
 
@@ -116,20 +123,85 @@ Hover over a dot for the file, lines and commit.
 - **No method names:** OmniCCG's output has none, so boiler-plating can't check the paper's "very similar names", and "same subsystem" is approximated by "same directory".
 - **Copies that become identical:** when a late propagation makes the copy left behind identical to the other copy, OmniCCG records no change, so that case can't be detected.
 - **Unproven catch-up:** the genealogy has no code, so it can't be checked that the late change was the *same* change.
-- **Several versions per commit:** OmniCCG sometimes records several versions of a lineage for one commit. The detection and the report use the last one per commit.
+- **Several versions per commit:** OmniCCG sometimes records several versions of a lineage for one commit. The detection and the report use the last one per commit for late propagation and boiler-plating.
 
-## Layout
+## Project map and how to change things
 
+The layout separates the command-line pipeline from the Rascal pattern-analysis
+project. Their entry points and metadata stay in their current locations:
+`run.sh` and `install.sh` expect files at the project root, while Rascal expects
+its sources, manifest, and Maven configuration under `patterns/`. Keeping these
+framework-required paths avoids extra configuration and makes the run commands
+easy to follow.
+
+```text
+CodeClonePairEvoution/
+|-- README.md                 Setup, commands, patterns, limitations, and this guide
+|-- install.sh                Creates the local runtime and builds NiCad
+|-- run.sh                    Runs the Python stage, Rascal stage, and report opener
+|-- clone_evo.py              Python entry point for running OmniCCG
+|-- .gitignore                Excludes local environments, dependencies, and run output
+|-- .vscode/
+|   `-- settings.json         Optional editor setting; not needed by the pipeline
+|-- vendor/                   Downloaded OmniCCG distribution (ignored by Git)
+|   `-- OmniCCG-main/
+|       `-- OmniCCG-CLI/      Python package and bundled NiCad used by this project
+|-- .venv/                    Generated Python environment; created by install.sh
+|-- rascal-shell-stable.jar   Downloaded Rascal runtime; created by install.sh
+|-- patterns.html             Standalone report snapshot; not read by the pipeline
+`-- patterns/                 Rascal project (keep its project structure)
+    |-- pom.xml               Rascal/Maven dependency and build configuration
+    |-- META-INF/
+    |   `-- RASCAL.MF         Rascal project manifest; points to src/
+    |-- report.html           HTML template used for generated reports
+    |-- src/
+    |   |-- Patterns.rsc      Rascal entry point: runs rules and writes report data
+    |   |-- Genealogy.rsc     Parses OmniCCG XML and builds report data
+    |   |-- LatePropagation.rsc
+    |   |-- Boilerplate.rsc   Pattern detection rules
+    `-- target/               Generated Rascal build output; do not edit by hand
 ```
-install.sh          setup
-run.sh              OmniCCG, then the pattern detection, then the report
-clone_evo.py        runs OmniCCG on a fresh clone of the repository (--first/--last, --out)
-patterns/           the Rascal project
-  src/Patterns.rsc        entry point: runs the detections, prints them, writes the report
-  src/Genealogy.rsc       reads ccg_data.xml; writes patterns.html from report.html
-  src/LatePropagation.rsc the late propagation rule
-  src/Boilerplate.rsc     the boiler-plating rule
-  report.html             the report's template
-```
 
-To run the Rascal part by hand: `cd patterns && java -jar ../rascal-shell-stable.jar Patterns <results-folder>`.
+`.venv/`, `rascal-shell-stable.jar`, and `vendor/` are local setup/runtime
+contents, not application source. `install.sh` creates or downloads them. The
+`target/` directory is generated build output. The top-level `patterns.html`
+is not the report template: new run reports are written as
+`<results-folder>/patterns.html` using `patterns/report.html`.
+
+### What happens during a run
+
+1. `run.sh` selects the local Python interpreter and calls `clone_evo.py`.
+2. `clone_evo.py` makes a clean clone of the analyzed repository and configures
+   OmniCCG's commit history selection.
+3. OmniCCG uses the NiCad bundled under `vendor/OmniCCG-main/OmniCCG-CLI/` to
+   detect clones at the selected revisions. It writes `ccg_data.xml` and
+   `ccg_metrics.xml` to the results folder.
+4. `run.sh` launches Rascal from `patterns/`. `Patterns.rsc` reads
+   `ccg_data.xml` through `Genealogy.rsc`, then calls the detection rules.
+5. `Genealogy.rsc` combines the findings with `patterns/report.html` to create
+   `<results-folder>/patterns.html`; `run.sh` opens that report.
+
+### Where to make changes
+
+| If you want to change… | Start here |
+|---|---|
+| Setup, downloads, or NiCad build steps | `install.sh` |
+| Pipeline orchestration or how the report is opened | `run.sh` |
+| Repository validation, clone preparation, or commit selection | `clone_evo.py` |
+| How OmniCCG XML is parsed or the report data is assembled | `patterns/src/Genealogy.rsc` |
+| Late-propagation detection | `patterns/src/LatePropagation.rsc` |
+| Boiler-plating detection | `patterns/src/Boilerplate.rsc` |
+| Rascal rule invocation and console output | `patterns/src/Patterns.rsc` |
+| Report layout and styling | `patterns/report.html` |
+| Rascal dependencies or build setup | `patterns/pom.xml` and `patterns/META-INF/RASCAL.MF` |
+
+Avoid editing `vendor/` for ordinary pipeline changes: it contains upstream
+OmniCCG code and bundled NiCad. If an upstream fix is needed, document it as a
+local patch so it can be reapplied after reinstalling the dependency.
+
+To run only the Rascal stage manually, from this project directory:
+
+```bash
+cd patterns
+java -jar ../rascal-shell-stable.jar Patterns <results-folder>
+```

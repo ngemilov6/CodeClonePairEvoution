@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ./run.sh <repo-dir> [--out DIR] [--fixed-leaps N | --from-commit SHA] [--first N | --last N]
+# ./run.sh <repo-dir> [--out DIR] [--fixed-leaps N | --from-commit SHA] [--first N | --last N] [--first-parent] [--java-only]
 #     Runs OmniCCG on the repository (saving ccg_data.xml in the results folder),
 #     then the clone pattern detection, and opens the report in the browser.
 # ./run.sh <repo-dir or results folder> --patterns-only [--out DIR]
